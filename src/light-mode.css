@@ -1,0 +1,12 @@
+/* light-mode.css */
+.light-mode .App {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* dark-mode.css */
+  .dark-mode .App {
+    background-color: #333;
+    color: #fff;
+  }
+  

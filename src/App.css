@@ -1,0 +1,13 @@
+/* src/dark-mode.css */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .App {
+  /* Adjust your styles for dark mode */
+}
+
+.dark-mode .dark-mode-toggle {
+  color: #fff;
+}

@@ -1,0 +1,64 @@
+/* TransactionIDs.css */
+
+.transaction-ids-container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #00270a;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: large;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0b3501;
+    border-radius: 20px;
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
+    background-image: linear-gradient(
+      120deg,
+      #007bff,
+      #0056b3
+    ); /* Gradient color for the copy button */
+  }
+  
+  button.reset-btn {
+    background-image: linear-gradient(
+      120deg,
+      #dc3545,
+      #b30027
+    ); /* Gradient color for the reset button */
+  }
+  
+  button.copy-btn:hover,
+  button.reset-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Add space between the buttons */
+  button:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  div:not(:first-child) {
+    margin-top: 20px;
+  }

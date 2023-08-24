@@ -1,0 +1,79 @@
+/* Search.css */
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #00270a;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: large;
+  }
+  
+  .search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
+    /* background-image: linear-gradient(
+      120deg,
+      #007bff,
+      #0056b3
+    ); /* Gradient color for the copy button * */
+  }
+  
+  .google-button,
+  .zauba-button {
+    
+    padding: 10px 10px;
+    background-color: #04132c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s; /* Apply transition to all properties */
+  }
+  
+  .google-button:hover,
+  .zauba-button:hover {
+    background-color: #010025;
+    transform: scale(1.05); /* Add scale effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+  }
+  
+  .zauba_container {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .header_h3 {
+    margin-bottom: 10px;
+  }
+  
+  .header_h3 h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .gcse-searchbox-only {
+    width: 80%;
+    margin: 0 auto;
+  }
+  

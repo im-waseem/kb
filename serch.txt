@@ -1,0 +1,84 @@
+import React, { useState } from 'react';
+// import { Search } from 'react-router-dom';
+
+const SearchComponent = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+//   const [searchInput, setSearchInput] = useState('');
+
+  const handleInputChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSearch = () => {
+    window.open(`https://www.google.com/search?q=${searchTerm}`, '_blank');
+  };
+
+  const handleVisitSite = () => {
+    // Handle visiting Zauba or any other site with the searchTerm
+    window.open(`https://www.zauba.com/s/${searchTerm}`, '_blank');
+  };
+
+  const handleReset = () => {
+    setSearchTerm('');
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={searchTerm}
+        onChange={handleInputChange}
+        placeholder="Enter your search term"
+      />
+      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleVisitSite}>Visit Zauba</button>
+      <button onClick={handleReset}>Reset</button>
+    </div>
+  );
+};
+
+export default SearchComponent;
+
+
+import React, { useState } from 'react';
+
+const Input = () => {
+  const [searchInput, setSearchInput] = useState('');
+  const [copiedValue, setCopiedValue] = useState('');
+
+  const handleSearchInputChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+
+  const handleCopy = () => {
+    setCopiedValue(searchInput);
+  };
+
+  const handleReset = () => {
+    setSearchInput('');
+    setCopiedValue('');
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={searchInput}
+        onChange={handleSearchInputChange}
+        placeholder="Enter search term..."
+      />
+      <button onClick={handleCopy}>Copy</button>
+      <button onClick={handleReset}>Reset</button>
+
+      <table>
+        {/* Your table data goes here */}
+      </table>
+
+      <div>
+        Copied Value: {copiedValue}
+      </div>
+    </div>
+  );
+};
+
+export default Input;

@@ -1,0 +1,11 @@
+/* Reset default margin and padding for the body and html elements */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Align the root container to the left side */
+#root {
+  display: flex;
+  justify-content: flex-start;
+}

@@ -1,0 +1,23 @@
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+.container{
+ text-align: center;   
+}  
